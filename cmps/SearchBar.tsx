@@ -47,9 +47,9 @@ function SearchBar() {
       searchParams.delete("manufacturer");
     }
 
-    const newPathname = `${window.location.pathname}?${searchParams
-      .toString()
-      .toLowerCase()}`;
+    const newPathname = `${
+      window.location.pathname
+    }?${searchParams.toString()}`;
 
     router.push(newPathname);
   };
